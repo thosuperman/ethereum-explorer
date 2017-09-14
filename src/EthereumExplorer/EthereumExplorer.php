@@ -79,10 +79,10 @@ class EthereumExplorer
      * @return string
      * @throws Exception
      */
-    private function doRequest(array $data, int $requestId = null): string
+    private function doRequest(array $data, int $requestId = 1): string
     {
         $data['jsonrpc'] = '2.0';
-        $data['id'] = $requestId ?? 1;
+        $data['id'] = $requestId;
         $this->lastRequest = json_encode($data);
         curl_setopt($this->ch, CURLOPT_POSTFIELDS, $this->lastRequest);
         $result = curl_exec($this->ch);
