@@ -7,12 +7,12 @@ use PHPUnit\Framework\TestCase;
 class EthereumExplorerTest extends TestCase
 {
 
-    private $url = '127.0.0.1:8545';
-
+    private $host = '127.0.0.1';
+    private $port = '8545';
 
     public function testGetTransactions(){
 
-        $eteriumExplorer = new EthereumExplorer($this->url);
+        $eteriumExplorer = new EthereumExplorer($this->host, $this->port);
 
         $addreses = ['0xf2b3f8eb4e663da275b8c57fe45a0e8d489eac2e'];
         $result = $eteriumExplorer->getTransactions($addreses);
@@ -29,7 +29,7 @@ class EthereumExplorerTest extends TestCase
 
     public function testCheckStatus(){
 
-        $eteriumExplorer = new EthereumExplorer($this->url);
+        $eteriumExplorer = new EthereumExplorer($this->host, $this->port);
         $requestId = 1;
 
         $this->assertInternalType('int', $requestId);
