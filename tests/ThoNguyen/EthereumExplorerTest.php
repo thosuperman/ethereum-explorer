@@ -1,13 +1,13 @@
 <?php
 require_once __DIR__ . '/../../vendor/autoload.php'; // Autoload files using Composer autoload
 
-use EthereumExplorer\EthereumExplorer;
+use ThoNguyen\EthereumExplorer;
 use PHPUnit\Framework\TestCase;
 
 class EthereumExplorerTest extends TestCase
 {
 
-    private $url = '18.221.22.28:8545';
+    private $url = '127.0.0.1:8545';
 
 
     public function testGetTransactions(){

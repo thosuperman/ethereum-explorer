@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use EthereumExplorer\EthereumExplorer;
+use ThoNguyen\EthereumExplorer;
 
 $ep = new EthereumExplorer('url_of_service');
 

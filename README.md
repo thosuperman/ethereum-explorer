@@ -6,7 +6,7 @@
 
 ```
 
-$ep = new EthereumExplorer('url_of_service');
+$ep = new EthereumExplorer('127.0.0.1:8545');
 
 try {
     echo $ep->checkStatus() . PHP_EOL;

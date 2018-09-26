@@ -1,6 +1,6 @@
 <?php
 
-namespace EthereumExplorer;
+namespace ThoNguyen;
 
 use Exception;
 

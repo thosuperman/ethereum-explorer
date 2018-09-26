@@ -1,14 +1,14 @@
 {
-  "name": "blockchainrndhub/ethereumexplorer",
-  "description": "The purpose of the lib is to connect to the EthereumExplorer service",
+  "name": "thonguyen/ethereumexplorer",
+  "description": "Connect to the EthereumExplorer service",
   "authors": [
     {
-      "name": "Blockchain R&D Hub",
-      "email": "info@blockchainrndhub.com"
+      "name": "Tho Nguyen",
+      "email": "thosuperman@gmail.com"
     }
   ],
   "license": "MIT",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require": {
     "php": "^7.0"
   },
@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "EthereumExplorer\\": "src/EthereumExplorer/"
+      "ThoNguyen\\": "src/ThoNguyen/"
     }
   }
 }
